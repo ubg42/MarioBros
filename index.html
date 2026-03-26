@@ -417,14 +417,19 @@
         }
 #explanation {
     position: fixed;
-    top: 140px;          /* adjust this to sit under the logo */
+    top: 180px;              /* pushes it BELOW the logo */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-size: 14px;
-    opacity: 0.9;
-    z-index: 20;
-    pointer-events: none;
+    z-index: 50;
+
+    display: flex;
+    flex-direction: column;  /* forces vertical stacking */
+    align-items: center;
+
+    line-height: 1.6;
+    text-shadow: 2px 2px 0 #000;
 }
     </style>
 
