@@ -416,8 +416,8 @@
             line-height: 1.5em;
         }
 #explanation {
-    position: fixed;
-    top: 180px;              /* pushes it BELOW the logo */
+    position: absolute;
+  
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -430,6 +430,7 @@
 
     line-height: 1.6;
     text-shadow: 2px 2px 0 #000;
+    left: 200px;
 }
     </style>
 
@@ -440,11 +441,7 @@
 </head>
 <body onload="FullScreenMario()" style="position: relative;">
     <div id="paused"><span>UNPAUSE</span></div>
-    <p id="explanation" style="text-align:center; margin-left:7px;">
-  Move: Arrows/WASD<br>
-  Fire/Sprint: Shift/CTRL<br>
-  Pause/Mute: P/M
-</p>
+
     <script>
         document.body.addEventListener(
           "keydown",
